@@ -294,6 +294,11 @@ const AboutPage = () => {
       <div className="about-content">
         <div className="quantum-year-logo">
           <div className="logo-container">
+            <img 
+              src="/media/International_Year_of_Quantum_logo.png" 
+              alt="2025 International Year of Quantum Science & Technology"
+              className="official-logo"
+            />
             <h1>2025</h1>
             <p>International Year of Quantum Science & Technology</p>
             <div className="un-badge">United Nations</div>
@@ -303,21 +308,85 @@ const AboutPage = () => {
         <section className="purpose-section">
           <h2>Purpose of This Tool</h2>
           <p>The Quantum Alphabet for Young Readers serves as an innovative educational resource designed to introduce fundamental quantum physics concepts to early-grade learners in an accessible, engaging, and age-appropriate manner.</p>
+          <p>This initiative supports the United Nations' designation of 2025 as the International Year of Quantum Science and Technology, promoting quantum literacy from an early age.</p>
         </section>
 
         <section className="curriculum-section">
           <h2>Curriculum Alignment</h2>
-          <ul>
-            <li><strong>Science Standards:</strong> NGSS Physical Science K-2</li>
-            <li><strong>Reading Standards:</strong> Common Core ELA K-3</li>
-            <li><strong>Digital Literacy:</strong> ISTE Standards for Students</li>
-            <li><strong>21st Century Skills:</strong> Critical thinking and scientific reasoning</li>
-          </ul>
+          <div className="standards-grid">
+            <div className="standard-item">
+              <h3>Science Standards</h3>
+              <ul>
+                <li>NGSS Physical Science K-2: Matter and Its Properties</li>
+                <li>NGSS Physical Science 3-5: Energy and Matter</li>
+                <li>State Science Standards: Scientific Inquiry and Reasoning</li>
+              </ul>
+            </div>
+            <div className="standard-item">
+              <h3>Reading & Language Arts</h3>
+              <ul>
+                <li>Common Core ELA K-3: Reading Comprehension</li>
+                <li>Vocabulary Development and Scientific Language</li>
+                <li>Text-to-Speech for Accessibility and Inclusion</li>
+              </ul>
+            </div>
+            <div className="standard-item">
+              <h3>Digital Literacy</h3>
+              <ul>
+                <li>ISTE Standards for Students: Digital Citizenship</li>
+                <li>Interactive Learning and Technology Integration</li>
+                <li>21st Century Skills Development</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="quantum-year-focus">
+            <h3>2025 International Year of Quantum Science & Technology Alignment</h3>
+            <p>This resource directly supports UNESCO's mission to promote quantum literacy worldwide. By introducing quantum concepts at the elementary level, we're building foundational understanding for the next generation of quantum scientists, engineers, and informed citizens.</p>
+            <ul>
+              <li><strong>Global Awareness:</strong> Understanding quantum technology's role in modern society</li>
+              <li><strong>Scientific Literacy:</strong> Building conceptual understanding of quantum phenomena</li>
+              <li><strong>Future Readiness:</strong> Preparing students for a quantum-enabled future</li>
+              <li><strong>Inclusive Education:</strong> Making quantum science accessible to all learners</li>
+            </ul>
+          </div>
         </section>
 
         <section className="oer-section">
           <h2>Open Education Resource</h2>
-          <p>This resource is freely available under Creative Commons licensing, supporting global access to quality quantum science education. It aligns with UNESCO's commitment to inclusive, equitable quality education for all.</p>
+          <div className="oer-details">
+            <h3>Creative Commons Licensing</h3>
+            <p>This resource is freely available under Creative Commons Attribution 4.0 International License, supporting global access to quality quantum science education.</p>
+            
+            <h3>UNESCO OER Alignment</h3>
+            <p>Aligned with UNESCO's commitment to inclusive, equitable quality education for all, this resource supports:</p>
+            <ul>
+              <li><strong>Access:</strong> Free and open access to high-quality educational content</li>
+              <li><strong>Equity:</strong> Breaking down barriers to quantum science education</li>
+              <li><strong>Innovation:</strong> Leveraging technology for engaging learning experiences</li>
+              <li><strong>Collaboration:</strong> Encouraging adaptation and localization by educators worldwide</li>
+            </ul>
+            
+            <h3>Usage Rights</h3>
+            <div className="usage-grid">
+              <div className="usage-item">
+                <h4>✓ Share</h4>
+                <p>Copy and redistribute in any medium or format</p>
+              </div>
+              <div className="usage-item">
+                <h4>✓ Adapt</h4>
+                <p>Remix, transform, and build upon the material</p>
+              </div>
+              <div className="usage-item">
+                <h4>✓ Commercial Use</h4>
+                <p>Use for any purpose, even commercially</p>
+              </div>
+              <div className="usage-item">
+                <h4>✓ Attribution</h4>
+                <p>Give appropriate credit to original author</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <footer className="about-footer">
@@ -325,8 +394,196 @@ const AboutPage = () => {
           <p>For educators, learners, and the citizens of planet Earth</p>
           <div className="quantum-year-2025">
             <p>Contributing to the International Year of Quantum Science and Technology 2025</p>
+            <p>Supporting UNESCO's Global Education Goals and Quantum Literacy Initiative</p>
           </div>
         </footer>
+      </div>
+    </div>
+  );
+};
+
+// Curriculum Alignment Page Component
+const CurriculumPage = () => {
+  return (
+    <div className="curriculum-page">
+      <header className="page-header">
+        <Link to="/" className="back-link">← Back to Storybook</Link>
+        <h1>Curriculum Alignment</h1>
+      </header>
+      <div className="curriculum-content">
+        <section className="standards-section">
+          <h2>Science Standards Alignment</h2>
+          <div className="standards-detail">
+            <div className="grade-level">
+              <h3>Grades K-2: NGSS Physical Science</h3>
+              <ul>
+                <li><strong>K-PS1-1:</strong> Plan and conduct investigations to compare properties of different materials</li>
+                <li><strong>1-PS1-1:</strong> Use materials to design solutions to human problems</li>
+                <li><strong>2-PS1-1:</strong> Plan and conduct investigations to describe and classify materials</li>
+              </ul>
+            </div>
+            <div className="grade-level">
+              <h3>Grades 3-5: NGSS Physical Science</h3>
+              <ul>
+                <li><strong>3-PS2-3:</strong> Ask questions about what happens when objects collide</li>
+                <li><strong>4-PS3-2:</strong> Make observations to provide evidence that energy can be transferred</li>
+                <li><strong>5-PS1-1:</strong> Develop models to describe that matter is made of particles</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="quantum-literacy-section">
+          <h2>2025 International Year of Quantum Science & Technology</h2>
+          <div className="quantum-focus">
+            <div className="quantum-goals">
+              <h3>Educational Goals</h3>
+              <ul>
+                <li>Build foundational understanding of quantum concepts</li>
+                <li>Develop scientific vocabulary and reasoning skills</li>
+                <li>Foster curiosity about the quantum world</li>
+                <li>Prepare students for future STEM learning</li>
+              </ul>
+            </div>
+            <div className="quantum-concepts">
+              <h3>Age-Appropriate Quantum Concepts</h3>
+              <ul>
+                <li><strong>Atoms:</strong> Building blocks of everything around us</li>
+                <li><strong>Energy:</strong> How particles move and interact</li>
+                <li><strong>Light:</strong> Wave-particle duality in simple terms</li>
+                <li><strong>Measurement:</strong> How observation affects tiny particles</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="implementation-section">
+          <h2>Classroom Implementation</h2>
+          <div className="implementation-grid">
+            <div className="implementation-item">
+              <h3>Reading Integration</h3>
+              <p>Use as guided reading material with vocabulary support and comprehension activities.</p>
+            </div>
+            <div className="implementation-item">
+              <h3>Science Exploration</h3>
+              <p>Introduce each concept before hands-on experiments and demonstrations.</p>
+            </div>
+            <div className="implementation-item">
+              <h3>Technology Skills</h3>
+              <p>Develop digital literacy through interactive navigation and text-to-speech features.</p>
+            </div>
+            <div className="implementation-item">
+              <h3>Cross-Curricular</h3>
+              <p>Connect to art, mathematics, and social studies through quantum applications.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+// Open Education Resource Page Component
+const OERPage = () => {
+  return (
+    <div className="oer-page">
+      <header className="page-header">
+        <Link to="/" className="back-link">← Back to Storybook</Link>
+        <h1>Open Education Resource</h1>
+      </header>
+      <div className="oer-content">
+        <section className="oer-intro">
+          <h2>Committed to Open Access Education</h2>
+          <p>The Quantum Alphabet for Young Readers is proudly offered as an Open Education Resource (OER), supporting UNESCO's vision of education as a fundamental human right and public good.</p>
+        </section>
+
+        <section className="licensing-section">
+          <h2>Creative Commons License</h2>
+          <div className="license-details">
+            <div className="license-badge">
+              <h3>CC BY 4.0</h3>
+              <p>Creative Commons Attribution 4.0 International</p>
+            </div>
+            <div className="license-permissions">
+              <h3>You are free to:</h3>
+              <div className="permission-grid">
+                <div className="permission">
+                  <h4>🔄 Share</h4>
+                  <p>Copy and redistribute the material in any medium or format</p>
+                </div>
+                <div className="permission">
+                  <h4>🔧 Adapt</h4>
+                  <p>Remix, transform, and build upon the material</p>
+                </div>
+                <div className="permission">
+                  <h4>💼 Commercial Use</h4>
+                  <p>Use the material for any purpose, even commercially</p>
+                </div>
+                <div className="permission">
+                  <h4>🌍 No Geographic Restrictions</h4>
+                  <p>Use anywhere in the world without limitation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="unesco-alignment">
+          <h2>UNESCO OER Recommendation Alignment</h2>
+          <div className="unesco-principles">
+            <div className="principle">
+              <h3>🎯 Access</h3>
+              <p>Removing financial, technological, and legal barriers to high-quality educational resources</p>
+            </div>
+            <div className="principle">
+              <h3>⚖️ Equity</h3>
+              <p>Ensuring all learners have access to quantum science education regardless of location or economic status</p>
+            </div>
+            <div className="principle">
+              <h3>🔬 Quality</h3>
+              <p>Providing scientifically accurate, age-appropriate content developed by education professionals</p>
+            </div>
+            <div className="principle">
+              <h3>🤝 Collaboration</h3>
+              <p>Encouraging educators worldwide to adapt, translate, and improve the resource</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="quantum-2025-oer">
+          <h2>Supporting the 2025 International Year</h2>
+          <div className="year-support">
+            <p>This OER directly contributes to the goals of the 2025 International Year of Quantum Science and Technology by:</p>
+            <ul>
+              <li><strong>Building Global Quantum Literacy:</strong> Making quantum concepts accessible worldwide</li>
+              <li><strong>Supporting Educators:</strong> Providing ready-to-use educational materials</li>
+              <li><strong>Fostering Innovation:</strong> Encouraging creative adaptations and implementations</li>
+              <li><strong>Promoting Inclusion:</strong> Ensuring quantum education reaches diverse learners</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="usage-guidelines">
+          <h2>Usage Guidelines</h2>
+          <div className="guidelines-grid">
+            <div className="guideline">
+              <h3>Attribution Required</h3>
+              <p>Please include: "Quantum Alphabet for Young Readers by Sai Gattupalli, PhD, licensed under CC BY 4.0"</p>
+            </div>
+            <div className="guideline">
+              <h3>Adaptation Encouraged</h3>
+              <p>Feel free to translate, modify, or adapt the content for your specific educational context</p>
+            </div>
+            <div className="guideline">
+              <h3>Share Improvements</h3>
+              <p>We encourage sharing your adaptations and improvements with the global education community</p>
+            </div>
+            <div className="guideline">
+              <h3>Technical Support</h3>
+              <p>The source code is available on GitHub for technical adaptations and improvements</p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
@@ -396,10 +653,6 @@ const QuantumStorybook = () => {
         <div className="cosmic-waves"></div>
       </div>
       <div className="cover-content">
-        <div className="quantum-year-badge">
-          <span className="year">2025</span>
-          <span className="description">International Year of Quantum Science & Technology</span>
-        </div>
         <div className="cover-illustration">
           <div className="floating-elements">
             <div className="robot">🤖</div>
@@ -412,6 +665,13 @@ const QuantumStorybook = () => {
           <h1 className="main-title">{currentConcept.title}</h1>
           <p className="author">{currentConcept.subtitle}</p>
           <p className="description">{currentConcept.description}</p>
+        </div>
+        <div className="quantum-logo-bottom">
+          <img 
+            src="/media/International_Year_of_Quantum_logo.png" 
+            alt="2025 International Year of Quantum Science & Technology"
+            className="quantum-logo"
+          />
         </div>
       </div>
     </div>
@@ -491,15 +751,15 @@ const QuantumStorybook = () => {
       {/* Footer */}
       <footer className="app-footer">
         <div className="footer-content">
-          <div className="footer-section">
+          <div className="footer-links">
             <Link to="/about" className="footer-link">About This Resource</Link>
             <span className="separator">|</span>
-            <span>Curriculum Alignment</span>
+            <Link to="/curriculum" className="footer-link">Curriculum Alignment</Link>
             <span className="separator">|</span>
-            <span>Open Education Resource</span>
+            <Link to="/oer" className="footer-link">Open Education Resource</Link>
           </div>
           <div className="footer-credits">
-            <p>Developed by <strong>Sai Gattupalli, PhD</strong></p>
+            <p><strong>Developed by Sai Gattupalli, PhD</strong></p>
             <p>For educators, learners, and the citizens of planet Earth</p>
           </div>
         </div>
@@ -516,6 +776,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<QuantumStorybook />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/curriculum" element={<CurriculumPage />} />
+          <Route path="/oer" element={<OERPage />} />
         </Routes>
         
         <style jsx global>{`
@@ -529,7 +791,7 @@ const App = () => {
 
           body {
             font-family: 'Open Sans', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: #000000;
             min-height: 100vh;
           }
 
@@ -537,6 +799,7 @@ const App = () => {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            background: #000000;
           }
 
           .storybook-container {
@@ -545,8 +808,9 @@ const App = () => {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px 20px 100px 20px;
+            padding: 20px 20px 0 20px;
             overflow: hidden;
+            background: #000000;
           }
 
           .book {
@@ -556,7 +820,7 @@ const App = () => {
             max-height: 600px;
             background: white;
             border-radius: 15px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(255,255,255,0.1);
             position: relative;
             transition: transform 0.3s ease;
             overflow: hidden;
@@ -572,34 +836,6 @@ const App = () => {
             height: 100%;
             position: relative;
             overflow: hidden;
-          }
-
-          .quantum-year-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 10px 15px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            z-index: 10;
-          }
-
-          .quantum-year-badge .year {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #2D3748;
-            line-height: 1;
-          }
-
-          .quantum-year-badge .description {
-            display: block;
-            font-size: 0.7rem;
-            color: #4A5568;
-            margin-top: 2px;
-            line-height: 1.1;
           }
 
           .cosmic-background {
@@ -641,14 +877,14 @@ const App = () => {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            padding: 80px 40px 40px 40px;
+            padding: 40px 40px 20px 40px;
             z-index: 2;
           }
 
           .floating-elements {
             position: relative;
             width: 300px;
-            height: 200px;
+            height: 150px;
           }
 
           .robot, .atom, .star, .rocket {
@@ -684,6 +920,10 @@ const App = () => {
           .title-section {
             text-align: center;
             color: white;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
           }
 
           .main-title {
@@ -706,6 +946,16 @@ const App = () => {
             font-size: 1rem;
             opacity: 0.9;
             font-style: italic;
+          }
+
+          .quantum-logo-bottom {
+            margin-top: auto;
+          }
+
+          .quantum-logo {
+            height: 80px;
+            width: auto;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
           }
 
           /* Book Spread Styles */
@@ -805,23 +1055,6 @@ const App = () => {
             animation: bridge 1.5s ease-in-out infinite;
           }
 
-          /* Complementarity particles */
-          .behavior-waveparticle .particle-dual {
-            width: 12px;
-            height: 12px;
-            background: #FFD93D;
-            animation: waveparticle 3s ease-in-out infinite;
-          }
-
-          /* Entanglement particles */
-          .behavior-mirrored .particle-entangled {
-            animation: mirrored 2s ease-in-out infinite;
-          }
-
-          .behavior-instantaneous .particle-connection {
-            animation: instantaneous 1s linear infinite;
-          }
-
           /* Text-to-speech button */
           .speak-button {
             background: #4299E1;
@@ -909,6 +1142,7 @@ const App = () => {
             right: 15px;
             display: flex;
             gap: 10px;
+            z-index: 10;
           }
 
           .nav-button {
@@ -942,6 +1176,7 @@ const App = () => {
             width: 100%;
             height: 4px;
             background: rgba(0,0,0,0.1);
+            z-index: 5;
           }
 
           .progress {
@@ -952,55 +1187,72 @@ const App = () => {
 
           /* Footer */
           .app-footer {
-            background: rgba(0,0,0,0.9);
+            background: #000000;
             color: white;
-            padding: 20px;
-            margin-top: auto;
+            padding: 15px 0;
+            margin-top: 0;
+            border-top: 1px solid #333;
           }
 
           .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 100vw;
+            margin: 0;
             text-align: center;
+            width: 100%;
           }
 
-          .footer-section {
+          .footer-links {
             margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
           }
 
           .footer-link {
-            color: #4299E1;
+            color: white;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
+            font-size: 0.95rem;
           }
 
           .footer-link:hover {
-            color: #63B3ED;
+            color: #4299E1;
           }
 
           .separator {
-            margin: 0 15px;
+            margin: 0 10px;
             opacity: 0.5;
+            color: white;
           }
 
           .footer-credits p {
-            margin: 5px 0;
-            font-size: 0.9rem;
+            margin: 3px 0;
+            font-size: 0.85rem;
+            color: #ccc;
           }
 
-          /* About Page Styles */
-          .about-page {
+          /* Page Styles */
+          .about-page, .curriculum-page, .oer-page {
             min-height: 100vh;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: #000000;
             color: white;
             padding: 20px;
             font-family: 'Open Sans', sans-serif;
           }
 
-          .about-header {
+          .page-header {
             max-width: 1200px;
             margin: 0 auto 40px auto;
+          }
+
+          .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4299E1;
+            margin-top: 20px;
           }
 
           .back-link {
@@ -1015,45 +1267,12 @@ const App = () => {
             color: #63B3ED;
           }
 
-          .about-content {
-            max-width: 800px;
+          .about-content, .curriculum-content, .oer-content {
+            max-width: 1000px;
             margin: 0 auto;
           }
 
-          .quantum-year-logo {
-            text-align: center;
-            margin-bottom: 50px;
-            padding: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-          }
-
-          .logo-container h1 {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #4299E1, #63B3ED, #90CDF4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-
-          .logo-container p {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-          }
-
-          .un-badge {
-            background: #2B6CB0;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            font-weight: 600;
-          }
-
-          .about-content section {
+          .about-content section, .curriculum-content section, .oer-content section {
             margin-bottom: 40px;
             background: rgba(255,255,255,0.05);
             padding: 30px;
@@ -1061,33 +1280,41 @@ const App = () => {
             backdrop-filter: blur(5px);
           }
 
-          .about-content h2 {
+          .about-content h2, .curriculum-content h2, .oer-content h2 {
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 20px;
             color: #4299E1;
           }
 
-          .about-content p {
+          .about-content h3, .curriculum-content h3, .oer-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #63B3ED;
+          }
+
+          .about-content p, .curriculum-content p, .oer-content p {
             font-size: 1.1rem;
             line-height: 1.7;
             margin-bottom: 15px;
           }
 
-          .about-content ul {
+          .about-content ul, .curriculum-content ul, .oer-content ul {
             list-style: none;
             padding-left: 0;
+            margin-bottom: 20px;
           }
 
-          .about-content li {
-            font-size: 1.1rem;
+          .about-content li, .curriculum-content li, .oer-content li {
+            font-size: 1rem;
             line-height: 1.6;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             padding-left: 20px;
             position: relative;
           }
 
-          .about-content li::before {
+          .about-content li::before, .curriculum-content li::before, .oer-content li::before {
             content: "→";
             position: absolute;
             left: 0;
@@ -1095,23 +1322,25 @@ const App = () => {
             font-weight: bold;
           }
 
-          .about-footer {
-            text-align: center;
-            padding: 30px;
-            border-top: 2px solid rgba(66, 153, 225, 0.3);
-            margin-top: 40px;
+          .official-logo {
+            max-height: 150px;
+            width: auto;
+            margin-bottom: 20px;
           }
 
-          .about-footer p {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+          /* Grid layouts for better organization */
+          .standards-grid, .implementation-grid, .permission-grid, .guidelines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
           }
 
-          .quantum-year-2025 {
-            margin-top: 20px;
-            padding: 15px;
-            background: rgba(66, 153, 225, 0.2);
+          .standard-item, .implementation-item, .permission, .guideline {
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
             border-radius: 10px;
+            border-left: 4px solid #4299E1;
           }
 
           /* Advanced Animations */
@@ -1138,25 +1367,6 @@ const App = () => {
           @keyframes bridge {
             0%, 100% { opacity: 0.3; transform: rotate(0deg); }
             50% { opacity: 1; transform: rotate(5deg); }
-          }
-
-          @keyframes waveparticle {
-            0% { border-radius: 50%; transform: scale(1); }
-            25% { border-radius: 0%; transform: scale(1.2); }
-            50% { border-radius: 50%; transform: scale(0.8); }
-            75% { border-radius: 0%; transform: scale(1.2); }
-            100% { border-radius: 50%; transform: scale(1); }
-          }
-
-          @keyframes mirrored {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(20px); }
-          }
-
-          @keyframes instantaneous {
-            0% { opacity: 0; transform: scaleX(0); }
-            50% { opacity: 1; transform: scaleX(1); }
-            100% { opacity: 0; transform: scaleX(0); }
           }
 
           @keyframes twinkle {
@@ -1200,11 +1410,6 @@ const App = () => {
               font-size: 1rem;
             }
 
-            .quantum-year-badge {
-              position: static;
-              margin-bottom: 20px;
-            }
-
             .navigation {
               bottom: 10px;
               right: 10px;
@@ -1214,11 +1419,25 @@ const App = () => {
               padding: 6px 12px;
               font-size: 0.8rem;
             }
+
+            .footer-links {
+              flex-direction: column;
+              gap: 5px;
+            }
+
+            .separator {
+              display: none;
+            }
+
+            .standards-grid, .implementation-grid, .permission-grid, .guidelines-grid {
+              grid-template-columns: 1fr;
+              gap: 15px;
+            }
           }
 
           @media (max-width: 480px) {
             .storybook-container {
-              padding: 10px 10px 80px 10px;
+              padding: 10px 10px 0 10px;
             }
             
             .book {
@@ -1248,6 +1467,10 @@ const App = () => {
             
             .concept-text {
               font-size: 0.95rem;
+            }
+
+            .quantum-logo {
+              height: 60px;
             }
           }
         `}</style>
