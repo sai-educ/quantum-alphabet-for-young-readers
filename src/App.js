@@ -179,7 +179,6 @@ const QuantumStorybook = () => {
           transform: scale(0.98);
         }
 
-        /* Cover Page Styles */
         .cover-page {
           width: 100%;
           height: 100%;
@@ -285,7 +284,6 @@ const QuantumStorybook = () => {
           font-style: italic;
         }
 
-        /* Book Spread Styles */
         .book-spread {
           display: flex;
           width: 100%;
@@ -427,7 +425,6 @@ const QuantumStorybook = () => {
           color: #A0AEC0;
         }
 
-        /* Navigation */
         .navigation {
           position: absolute;
           bottom: 20px;
@@ -452,7 +449,6 @@ const QuantumStorybook = () => {
           background: rgba(0,0,0,0.9);
         }
 
-        /* Progress Bar */
         .progress-bar {
           position: absolute;
           top: 0;
@@ -468,7 +464,6 @@ const QuantumStorybook = () => {
           transition: width 0.3s ease;
         }
 
-        /* Animations */
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-20px); }
@@ -494,7 +489,6 @@ const QuantumStorybook = () => {
           50% { transform: scale(1.05); }
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
           .book {
             width: 95vw;
